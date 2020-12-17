@@ -23,14 +23,16 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 
     const BlogPostTemplate = require.resolve(`./src/templates/blog-post.js`);
 
+    const SongTemplate = require.resolve(`./src/templates/song.js`);
+
     const result = await graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      allMarkdownRemark {
         edges {
           node {
+            frontmatter {
+              template
+            }
             fields {
               slug
             }
@@ -48,7 +50,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
   result.data.allMarkdownRemark.edges.forEach(({node}) => {
       createPage({
           path: node.fields.slug,
-          component: BlogPostTemplate,
+          component: require.resolve(`./src/templates/${node.frontmatter.template}.js`),
           context: {
               slug: node.fields.slug
           }

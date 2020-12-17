@@ -21,10 +21,10 @@ const Header = ({ siteTitle }) => (
           About
       </Link>
       <Link
-          to="/lyrics"
+          to="/songs"
           className="header-button"
         >
-          Lyrics
+          Songs
       </Link>
       <Link
           to="/blog"

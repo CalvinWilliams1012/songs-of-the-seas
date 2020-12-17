@@ -3,10 +3,10 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-const AboutPage = () => (
+const BlogsPage = () => (
   <Layout>
-    <SEO title="About" />
-    <h1>About</h1>
+    <SEO title="Blog" />
+    <h1>Blog</h1>
     <p>Welcome to Songs of the Seas</p>
     <p>This site is still in development, come back in a few weeks to see the progress :)</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
@@ -15,4 +15,4 @@ const AboutPage = () => (
   </Layout>
 )
 
-export default AboutPage
+export default BlogsPage

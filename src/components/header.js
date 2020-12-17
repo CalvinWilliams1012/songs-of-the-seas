@@ -13,31 +13,40 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>   
       </h1>
-      <Link
-          to="/history"
-          className="header-button"
-        >
-          History
-      </Link>
+      <div className="header-button-wrapper">
+        <Link
+            to="/history"
+            className="header-button"
+          >
+            History
+        </Link>
 
-      <Link
-          to="/songs"
-          className="header-button"
-        >
-          Songs
-      </Link>
-      <Link
-          to="/about"
-          className="header-button"
-        >
-          About
-      </Link>
-      <Link
-          to="/blog"
-          className="header-button"
-        >
-          Blog
-      </Link>
+        <Link
+            to="/songs"
+            className="header-button"
+          >
+            Songs
+        </Link>
+        <Link
+            to="/about"
+            className="header-button"
+          >
+            About
+        </Link>
+        <Link
+            to="/blog"
+            className="header-button"
+          >
+            Blog
+        </Link>
+
+      </div>
+
+      <div className="header-hamburger">
+        <div className="header-hamburger-div"></div>
+        <div className="header-hamburger-div"></div>
+        <div className="header-hamburger-div"></div>
+      </div>
   </header>
 )
 

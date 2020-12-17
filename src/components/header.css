@@ -1,11 +1,41 @@
 .header-nav {
     background: #0D2C54;
+    height: auto;
+    width:100%;
 }
 
 .header-h1 {
     display: inline-block;
     padding: 1.45rem 1.0875rem .5rem 1.0875rem;
 }
+.header-button-wrapper {
+    display: inline-block;
+}
+
+.header-hamburger {
+    display: none;
+}
+
+.header-hamburger-div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    display: block;
+}
+
+@media only screen and (max-width: 800px) {
+    [class*="header-button-wrapper"] {
+        display: none;
+    }
+
+    [class="header-hamburger"] {
+        display: inline-block;
+        float: right;
+        padding: 1.45rem 1.0875rem;    
+    }
+  }
+  
 
 .header-button {
     color: #F6F7EB;

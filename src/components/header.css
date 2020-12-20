@@ -31,13 +31,22 @@
 
     [class="header-hamburger"] {
         display: inline-block;
-        float: right;
-        padding: 1.45rem 1.0875rem;    
+        position: fixed;
+        right: .3rem;
+        top: .3rem;  
     }
   }
   
 
 .header-button {
+    color: #F6F7EB;
+    text-decoration: none;
+    padding: 1.45rem 1.0875rem;
+}
+
+.hamburger-header-button{
+    text-align: center;
+    display: block;
     color: #F6F7EB;
     text-decoration: none;
     padding: 1.45rem 1.0875rem;

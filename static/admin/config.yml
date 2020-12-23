@@ -1,7 +1,12 @@
 backend:
   name: git-gateway
   branch: main
-
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
 media_folder: static/img
 public_folder: /img
 
@@ -20,8 +25,10 @@ collections:
       - { label: 'Template', name: 'template', widget: 'string', default: 'blog-post'}
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Featured Image', name: 'featuredimage', widget: 'image'}
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Tags', name: 'tags', widget: 'list'}
   - name: 'song'
     label: 'Song'
     folder: 'content/songs'

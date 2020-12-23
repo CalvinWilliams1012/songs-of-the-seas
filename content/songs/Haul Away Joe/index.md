@@ -1,6 +1,8 @@
 ---
 template: song
 title: Haul Away Joe
+tags:
+  - test
 lyrics: |-
   When I was a little boy, or so me Mother told me,
 

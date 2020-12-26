@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { Link, graphql, StaticQuery} from 'gatsby'
+import PreviewCompatibleImage from './previewcompatibleimage'
 import './blogroll.css'
 
 
@@ -15,27 +16,31 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div className="post-div" key={post.id}>
               <article>
-                <header>
-                  <p>
-                    <Link
+                <header>                    
+                  <Link
                       to={post.fields.slug}
                     >
+                  <div className="thumbnail">
+                {post.frontmatter.featuredimage ? (
+                    <div>
+                      <PreviewCompatibleImage
+                        imageInfo={{
+                          image: post.frontmatter.featuredimage,
+                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                        }}
+                      />
+                    </div>
+                  ) : null}
+                  <p className="title">
                       {post.frontmatter.title}
-                    </Link>
                     <span> &bull; </span>
                     <span>
                       {post.frontmatter.date}
                     </span>
                   </p>
-                </header>
-                <p>
-                  {post.frontmatter.description}
-                  <br />
-                  <br />
-                  <Link to={post.fields.slug}>
-                    Keep Reading →
+                  </div>
                   </Link>
-                </p>
+                </header>
               </article>
             </div>
           ))}
@@ -67,10 +72,9 @@ export default () => (
                 slug
               }
               frontmatter {
-                description
                 title
                 template
-                date(formatString: "MMMM DD, YYYY")
+                date
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {

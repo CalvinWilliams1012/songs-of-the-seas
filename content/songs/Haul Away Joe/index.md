@@ -1,29 +1,26 @@
 ---
 template: song
-title: Haul Away Joe
+title: Santy Anna - Historical
 tags:
   - test
 lyrics: |-
-  When I was a little boy, or so me Mother told me,
+  Santy Anna runaway
 
+  Ho-roo Santy Anna
 
-  Away haul away, we'll haul away Joe
+  Santa Anna runaway
 
+  All of the plains of Mexico
 
-  That if I did not kiss the girls, me lips would grow all moldy
+  Santa Anna runaway
 
+  General Taylor gained the day
 
-  Away haul away, we'll haul away Joe
+  Santy Anna runaway
 
+  Mexico all do know
 
-  Away haul away, we'll haul for better weather
+  Santa Anna runaway
 
-
-  Away haul away, we'll haul away Joe
-
-
-  Away haul away, we'll haul away together
-
-
-  Away haul away, we'll haul away Joe
+  The Americans 'll make Ureta fly
 ---

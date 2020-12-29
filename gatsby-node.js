@@ -26,10 +26,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.createPages = async ({actions, graphql, reporter}) => {
     const { createPage } = actions;
 
-    const BlogPostTemplate = require.resolve(`./src/templates/blog-post.js`);
-
-    const SongTemplate = require.resolve(`./src/templates/song.js`);
-
     const result = await graphql(`
     {
       allMarkdownRemark {

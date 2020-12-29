@@ -598,3 +598,16 @@ pre tt:after {
 .main-content{
   margin-top: 1rem;
 }
+
+.alert{
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 0.83;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.info{
+  background-color: #23C9FF;
+}

@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -12,6 +11,9 @@ const BlogPostTemplate = ({ data }) => {
       <SEO title={frontmatter.title} />
       <h1>{frontmatter.title}</h1>
       <h2>{frontmatter.lyrics}</h2>
+      <div className="alert info">
+      <strong>Info!</strong> Lyrics don't seem right? Due to the nature of sea shanties, many different variations exist. Contact us if you believe any song should be updated
+      </div>  
     </Layout>
   )
 }

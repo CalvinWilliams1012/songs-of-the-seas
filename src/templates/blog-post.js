@@ -13,7 +13,7 @@ const BlogPostTemplate = ({ data }) => {
       <h1>{frontmatter.title}</h1>
       <h2>{frontmatter.date}</h2>
       <p>{frontmatter.description}</p>
-      <p>{frontmatter.body}</p>
+      <p dangerouslySetInnerHTML={{__html:markdownRemark.__html}}></p>
     </Layout>
   )
 }
@@ -23,10 +23,10 @@ export default BlogPostTemplate
 export const pageQuery = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         description
-        body
         title
       }
     }

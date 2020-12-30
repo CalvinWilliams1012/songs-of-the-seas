@@ -42,4 +42,4 @@ collections:
     fields:
       - { label: 'Template', name: 'template', widget: 'string', default: 'song'}
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Lyrics', name: 'lyrics', widget: 'markdown' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

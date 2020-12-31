@@ -13,7 +13,7 @@ const BlogPostTemplate = ({ data }) => {
       <h1>{frontmatter.title}</h1>
       <h2>{frontmatter.date}</h2>
       <p>{frontmatter.description}</p>
-      <p dangerouslySetInnerHTML={{__html:markdownRemark.__html}}></p>
+      <div dangerouslySetInnerHTML={{__html:markdownRemark.html}}></div>
     </Layout>
   )
 }

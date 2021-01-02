@@ -1,11 +1,20 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import FullImageWithText from "../components/fullimagewithtext"
+import { graphql } from "gatsby"
 
-const HistoryPage = () => (
+
+const HistoryPage = ({data}) => (
   <Layout>
     <SEO title="History" />
-    <h1>History</h1>
+    <FullImageWithText
+      imageInfo={{
+        image: data.file,
+        alt: 'Large sailing ship sailing into a sunrise/sunset ',
+        text: 'History',
+      }}
+      />
     <p>Before our modern ships and airplanes, to transport people or goods across the ocean, sailing ships were used. </p>
     <p> While we now can cross the atlantic in 6-7 hours by plane and 6-8 days for a modern ship, these sailing ships took many weeks if not many months. Along with the extended length of the trips, these ships required man power to sail, and being at sea, the men did not have many forms of entertainment.</p>
     <p>With all this taken into account, we can see why people started to create songs of the seas!</p>
@@ -21,5 +30,17 @@ const HistoryPage = () => (
 
   </Layout>
 )
+
+export const query = graphql`
+  {
+    file(relativePath: {eq: "ship-large.jpg"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 export default HistoryPage

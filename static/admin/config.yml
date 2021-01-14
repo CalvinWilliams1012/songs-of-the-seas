@@ -33,13 +33,14 @@ collections:
     label: 'Song'
     folder: 'content/songs'
     create: true
-    slug: 'index'
+    slug: '{{slug}}-{{version}}'
     media_folder: ''
     public_folder: ''
-    path: '{{title}}/index'
     editor:
       preview: true
     fields:
       - { label: 'Template', name: 'template', widget: 'string', default: 'song'}
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Version', name: 'version', widget: 'number', default: 1 }
+      - { label: 'Tags', name: 'tags', widget: 'list'}

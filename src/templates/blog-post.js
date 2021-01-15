@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import TagList from "../components/taglist"
 
 const BlogPostTemplate = ({ data }) => {
   const { markdownRemark } = data;
@@ -14,6 +14,7 @@ const BlogPostTemplate = ({ data }) => {
       <h2>{frontmatter.date}</h2>
       <p>{frontmatter.description}</p>
       <div dangerouslySetInnerHTML={{__html:markdownRemark.html}}></div>
+      <TagList tags={frontmatter.tags} tagpath="blogtags" />
     </Layout>
   )
 }
@@ -28,6 +29,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         title
+        tags
       }
     }
   }

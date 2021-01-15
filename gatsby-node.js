@@ -60,18 +60,25 @@ exports.createPages = async ({actions, graphql, reporter}) => {
       })
   })
 
-  let tags = [];
+  let songTags = [];
+  let blogTags = [];
   //Get all tags from blogs and songs
   result.data.allMarkdownRemark.edges.forEach(({node}) => {
-    tags = tags.concat(node.frontmatter.tags);
+    if(node.frontmatter.template == "song"){
+      songTags = songTags.concat(node.frontmatter.tags);
+    }else{
+      blogTags = blogTags.concat(node.frontmatter.tags);
+    }
   })
 
   //Ensure we only have unique tags
-  tags = tags.filter((v, i, a) => a.indexOf(v) === i);
+  songTags = songTags.filter((v, i, a) => a.indexOf(v) === i);
+  blogTags = blogTags.filter((v, i, a) => a.indexOf(v) === i);
+
 
   //Make tag pages
-  tags.forEach((tag)=> {
-    const tagPath = `/tags/${tag}/`;
+  songTags.forEach((tag)=> {
+    const tagPath = `/songtags/${tag}/`;
 
     createPage({
       path: tagPath,
@@ -81,4 +88,16 @@ exports.createPages = async ({actions, graphql, reporter}) => {
       }
     })
   })
+  blogTags.forEach((tag)=> {
+    const tagPath = `/blogtags/${tag}/`;
+
+    createPage({
+      path: tagPath,
+      component: require.resolve(`./src/templates/tags.js`),
+      context: {
+        tag,
+      }
+    })
+  })
+
 }

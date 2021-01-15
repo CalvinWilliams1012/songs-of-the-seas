@@ -611,3 +611,12 @@ pre tt:after {
 .alert.info{
   background-color: #23C9FF;
 }
+
+.taglist {
+  list-style: none;
+  margin: 1.5rem 1.5rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+}

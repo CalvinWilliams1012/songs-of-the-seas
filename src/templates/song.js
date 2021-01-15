@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -16,6 +16,18 @@ const SongTemplate = ({ data }) => {
       <div className="alert info">
       <strong>Info!</strong> Lyrics don't seem right? Due to the nature of sea shanties, many different variations exist. Contact us if you believe any song should be updated
       </div>  
+      {frontmatter.tags && frontmatter.tags.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>Tags</h4>
+                <ul className="taglist">
+                  {frontmatter.tags.map((tag) => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${tag}/`}>{tag}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
     </Layout>
   )
 }
@@ -28,6 +40,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        tags
       }
     }
   }

@@ -33,6 +33,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
           node {
             frontmatter {
               template
+              tags
             }
             fields {
               slug
@@ -48,6 +49,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
     return;
   }
 
+  //Create the blog and song pages using their templates
   result.data.allMarkdownRemark.edges.forEach(({node}) => {
       createPage({
           path: node.fields.slug,
@@ -56,5 +58,27 @@ exports.createPages = async ({actions, graphql, reporter}) => {
               slug: node.fields.slug
           }
       })
+  })
+
+  let tags = [];
+  //Get all tags from blogs and songs
+  result.data.allMarkdownRemark.edges.forEach(({node}) => {
+    tags = tags.concat(node.frontmatter.tags);
+  })
+
+  //Ensure we only have unique tags
+  tags = tags.filter((v, i, a) => a.indexOf(v) === i);
+
+  //Make tag pages
+  tags.forEach((tag)=> {
+    const tagPath = `/tags/${tag}/`;
+
+    createPage({
+      path: tagPath,
+      component: require.resolve(`./src/templates/tags.js`),
+      context: {
+        tag,
+      }
+    })
   })
 }

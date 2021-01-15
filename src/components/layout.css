@@ -620,3 +620,9 @@ pre tt:after {
   justify-content: left;
   align-items: center;
 }
+
+.taglist li {
+  padding: 0 2rem 1rem 0;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}

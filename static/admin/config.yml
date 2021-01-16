@@ -43,4 +43,5 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Version', name: 'version', widget: 'number', default: 1 }
+      - { label: 'Youtube', name: 'youtube', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'list'}

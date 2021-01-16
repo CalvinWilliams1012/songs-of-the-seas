@@ -626,3 +626,7 @@ pre tt:after {
   margin-bottom: 1.5rem;
   margin-top: 0;
 }
+
+.songLyrics {
+  text-align: center;
+}

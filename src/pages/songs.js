@@ -7,7 +7,7 @@ const SongsPage = () => (
   <Layout>
     <SEO title="Songs" />
     <h1>Songs</h1>
-    <p>Index of songs in alphabetical order:</p>
+    <p>Index of songs:</p>
     <SongRoll/>
   </Layout>
 )

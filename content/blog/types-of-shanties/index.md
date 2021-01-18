@@ -35,4 +35,4 @@ Some other types:
 
 * **Forecastle / Fo'castle** **shanties** were sung after the work was done and were mostly used to tell stories, these were sung in the crew's quarters, the forecastle.
 * **Whaling shanties** are more harsh as they represent working on a whaling ship which was one of the more dangerous and difficult sailing as it required two or more years at sea and sailors could be hurt or killed by the whales tail smashing the ship.
-* **Pumping shanties** used when pumping leakage from the holds of the ship. An example is 'Leave Her Johnny' which was sung while performing the last pump when the ship was at port at the end of a voyage.
+* **Pumping shanties** used when pumping leakage from the holds of the ship. An example is '[Leave Her Johnny](https://www.songsoftheseas.com/leave-her-johnny-1/)' which was sung while performing the last pump when the ship was at port at the end of a voyage.

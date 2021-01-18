@@ -11,7 +11,7 @@ const BlogPostTemplate = ({ data }) => {
     <Layout>
        <SEO title={frontmatter.title} />
       <h1>{frontmatter.title}</h1>
-      <h2>{frontmatter.date}</h2>
+      <p className='blogdate'>{frontmatter.date}</p>
       <p>{frontmatter.description}</p>
       <div dangerouslySetInnerHTML={{__html:markdownRemark.html}}></div>
       <TagList tags={frontmatter.tags} tagpath="blogtags" />

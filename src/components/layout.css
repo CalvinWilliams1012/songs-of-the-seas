@@ -647,3 +647,8 @@ pre tt:after {
 .hero-image{
   max-height: 550px;
 }
+
+.blogdate{
+  font-style: italic;
+  font-size: medium;
+}

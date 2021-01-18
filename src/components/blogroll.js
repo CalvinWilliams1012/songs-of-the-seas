@@ -74,7 +74,7 @@ export default () => (
               frontmatter {
                 title
                 template
-                date
+                date(formatString: "DD MMM")
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {

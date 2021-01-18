@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import FullImageWithText from "../components/fullimagewithtext"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 
 const HistoryPage = ({data}) => (
@@ -25,7 +25,7 @@ const HistoryPage = ({data}) => (
 
     <p>Shanties as a genre are very malleable due to the need for the ability to condense or lengthen the song to fit the current task.</p>
     <p>In general, the musical structure of a sea shanty is a call and a response, where the "shantyman" would make a call, and the rest of the workers in chorus would respond while performing the task like pulling rope in unison.
-    There are some exceptions to this, as not all shanties required these breaks and bursts, such as raising anchor. This can be further explained by the types of shanties.</p>
+    There are some exceptions to this, as not all shanties required these breaks and bursts, such as raising anchor. This can be further explained by the <Link to="/types-of-shanties/">types of shanties</Link></p>
     
 
   </Layout>

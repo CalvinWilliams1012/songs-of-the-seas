@@ -1,11 +1,9 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
-
-
-const TagPage = ({   
+const SongTagPage = ({   
     data: {
         allMarkdownRemark: { group },
         site: {
@@ -20,7 +18,7 @@ const TagPage = ({
             <ul className="taglist">
                 {group.map((tag) => (
                 <li key={tag.fieldValue}>
-                    <Link to={`/tags/${tag.fieldValue}/`}>
+                    <Link to={`/songtags/${tag.fieldValue}/`}>
                     {tag.fieldValue} ({tag.totalCount})
                     </Link>
                 </li>
@@ -37,7 +35,7 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(limit: 1000) {
+    allMarkdownRemark(filter: {frontmatter: {template: {eq: "song"}}}, limit: 1000) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
@@ -46,4 +44,4 @@ export const query = graphql`
   }
 `
 
-export default TagPage
+export default SongTagPage

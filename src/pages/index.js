@@ -8,7 +8,8 @@ const IndexPage = ({data}) => (
   <Layout heroImage={data.file.childImageSharp.fluid}>
     <SEO title="Home" />
     <h1>Welcome to Songs of the Seas</h1>
-    <p>To learn more about this site visit our <Link to='/about'>About page</Link>, or for more details on the history of the songs visit our <Link to='/history'>History page</Link>.</p>
+    <p>This site is for everything sea shanty!</p>
+    <p>For more details on the history of sea shanties visit our <Link to='/history'>History page</Link>.</p>
   </Layout>
 )
 

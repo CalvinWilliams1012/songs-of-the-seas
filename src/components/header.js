@@ -41,12 +41,6 @@ class Header extends React.Component {
               Songs
           </Link>
           <Link
-              to="/about"
-              className="header-button"
-            >
-              About
-          </Link>
-          <Link
               to="/blog"
               className="header-button"
             >
@@ -67,12 +61,6 @@ class Header extends React.Component {
               className="hamburger-header-button"
             >
               Songs
-          </Link>
-          <Link
-              to="/about"
-              className="hamburger-header-button"
-            >
-              About
           </Link>
           <Link
               to="/blog"

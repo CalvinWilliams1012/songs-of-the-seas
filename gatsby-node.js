@@ -85,6 +85,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
       component: require.resolve(`./src/templates/tags.js`),
       context: {
         tag,
+        templateType: `song`
       }
     })
   })
@@ -96,6 +97,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
       component: require.resolve(`./src/templates/tags.js`),
       context: {
         tag,
+        templateType: `blog`,
       }
     })
   })

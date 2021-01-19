@@ -26,7 +26,7 @@ const TagTemplate = ({ data, pageContext }) => {
       <h1>{title}</h1>
       <h3>{tagHeader}</h3>
       <ul className="taglist">{postLinks}</ul>
-      <Link to="/songtags/">Browse all tags</Link>
+      <Link to={`/${pageContext.templateType}tags/tags/`}>Browse all tags</Link>
     </Layout>
   )
 }

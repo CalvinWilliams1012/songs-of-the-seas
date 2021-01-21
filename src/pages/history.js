@@ -33,7 +33,7 @@ const HistoryPage = ({data}) => (
 
 export const query = graphql`
   {
-    file(relativePath: {eq: "ship-large.jpg"}) {
+    file(relativePath: {eq: "ships-at-port-painting.jpg"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

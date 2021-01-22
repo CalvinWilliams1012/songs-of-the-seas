@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SongRoll from "../components/songroll"
 import FullImageWithText from "../components/fullimagewithtext"
+import { graphql } from "gatsby"
 
 const SongsPage = ({data}) => (
   <Layout>

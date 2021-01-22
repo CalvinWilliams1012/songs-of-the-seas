@@ -2,7 +2,7 @@
 template: blog-post
 title: Sea Shanty Books!
 date: 2021-01-22
-featuredimage: bookshelf-and-ladder.jpg
+featuredimage: bookshelf-and-ladder-1920.jpg
 description: Books with or about Sea Shanties!
 tags:
   - Books

@@ -2,7 +2,7 @@
 template: blog-post
 title: Types of Shanties
 date: 2021-01-17T16:21:00.000Z
-featuredimage: sails-from-deck.jpg
+featuredimage: ship-in-fog-1920.jpg
 description: The different types of shanties and examples!
 tags:
   - History

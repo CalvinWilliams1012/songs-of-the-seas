@@ -10,21 +10,15 @@ class SongRoll extends React.Component {
 
     return (
       <div>
+        <ul className="taglist">
         {posts && posts.map(({ node: post }) => (
-            <div key={post.id}>
-              <article>
-                <header>                    
-                  <Link
-                      to={post.fields.slug}
-                    >
-                  <p>
-                      {post.frontmatter.title}
-                  </p>
-                  </Link>
-                </header>
-              </article>
-            </div>
+            <li key={post.id}>
+              <Link to={post.fields.slug}>
+                {post.frontmatter.title}
+              </Link>
+            </li>
           ))}
+        </ul>
       </div>
     )
   }

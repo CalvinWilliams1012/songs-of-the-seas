@@ -10,8 +10,7 @@ class SongRoll extends React.Component {
 
     return (
       <div>
-        {posts &&
-          posts.map(({ node: post }) => (
+        {posts && posts.map(({ node: post }) => (
             <div key={post.id}>
               <article>
                 <header>                    
@@ -44,7 +43,7 @@ export default () => (
     query={graphql`
       query SongRollQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___title] }
+          sort: { order: ASC, fields: [frontmatter___title] }
           filter: { frontmatter: { template: { eq: "song" } } }
         ) {
           edges {

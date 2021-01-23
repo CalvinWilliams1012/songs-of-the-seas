@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TagList from "../components/taglist"
@@ -18,6 +18,11 @@ const SongTemplate = ({ data }) => {
       <div className="alert info">
       <strong>Info!</strong> Lyrics don't seem right? Due to the nature of sea shanties, many different variations exist. Contact us if you believe any song should be updated
       </div>  
+      {frontmatter.tags && frontmatter.tags.some(tag => tag === "Historical") ? 
+        <div className="alert info">
+        <strong>Info!</strong> This song is tagged as <Link to="/songtags/Historical/">Historical</Link> which means the lyrics are from a historical rendition, for example from a historical <Link to="/sea-shanty-books/">Book.</Link>
+        </div>  
+      : null}
       <TagList tags={frontmatter.tags} tagpath="songtags" />
       {frontmatter.youtube ?(
         frontmatter.youtube.split(',').map((link)=>(

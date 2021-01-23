@@ -612,6 +612,10 @@ pre tt:after {
   background-color: #23C9FF;
 }
 
+.alert.info a{
+  color: #0D2C54;
+}
+
 .taglist {
   list-style: none;
   margin: 1.5rem 1.5rem 0 0;

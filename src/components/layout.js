@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from 'gatsby-image'
 import Header from "./header"
 import "./layout.css"
@@ -43,7 +43,7 @@ const Layout = ({ children, heroImage }) => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
           {` `}by{` `}
-          <a href="https://calvinwilliams.ca">Calvin Williams.</a>
+          <Link to="/about">Calvin Williams.</Link>
         </footer>
       </div>
     </>

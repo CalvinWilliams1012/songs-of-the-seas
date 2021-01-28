@@ -71,6 +71,7 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     >
       <script data-ad-client="ca-pub-7815080056981939" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <meta name="google-site-verification" content="YwUheD4vwtHtk1ZDmdGNDZWHEUSIe3YTDBFx7B_uVS4" />
       </Helmet>
   )
 }

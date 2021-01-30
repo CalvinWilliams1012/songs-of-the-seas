@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://www.songsoftheseas.com/`,
     title: `Songs of the Seas`,
     description: `All your Sea Shanty needs, sea shanty lyrics, sea shanty history and other related music content.`,
     author: `Calvin Williams`,
@@ -87,7 +88,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-
+    `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],

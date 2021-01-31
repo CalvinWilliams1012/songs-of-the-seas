@@ -16,7 +16,7 @@ const SongTemplate = ({ data }) => {
       <h1 className="songLyrics" >{frontmatter.title}</h1>
       <div className="songLyrics" dangerouslySetInnerHTML={{__html: markdownRemark.html }}></div>
       <div className="alert info">
-      <strong>Info!</strong> Lyrics don't seem right? Due to the nature of sea shanties, many different variations exist. Contact us if you believe any song should be updated
+      <strong>Info!</strong> Lyrics don't seem right? Due to the nature of sea shanties, many different variations exist. <Link to="/contact">Contact me</Link> if you believe any song should be updated
       </div>  
       {frontmatter.tags && frontmatter.tags.some(tag => tag === "Historical") ? 
         <div className="alert info">

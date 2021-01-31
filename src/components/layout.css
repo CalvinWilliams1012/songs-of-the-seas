@@ -656,3 +656,30 @@ pre tt:after {
   font-style: italic;
   font-size: medium;
 }
+
+.form-label{
+  display: block;
+}
+
+.form-input{
+  width: 100%;
+  padding: 1rem 1rem;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.form-input-large{
+  width: 100%;
+  padding: 1rem 1rem;
+  margin: 8px 0;
+  box-sizing: border-box;
+  max-height: 40em;
+  min-height: 8em;
+}
+
+.form-button{
+  background-color: #0D2C54;
+  color: white;
+  border-radius: 4px;
+  padding: 1rem 1rem;
+}

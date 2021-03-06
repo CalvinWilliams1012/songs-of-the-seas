@@ -1,7 +1,6 @@
 ---
 template: song
 title: The Kittyman
-version: 1
 youtube: https://www.youtube.com/embed/dN3wEdK_vxw
 tags:
   - Parody

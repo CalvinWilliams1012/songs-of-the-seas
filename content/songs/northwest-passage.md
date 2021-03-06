@@ -1,7 +1,6 @@
 ---
 template: song
 title: Northwest Passage
-version: 1
 youtube: https://www.youtube.com/embed/TVY8LoM47xI
 ---
 ***\[Chorus]***

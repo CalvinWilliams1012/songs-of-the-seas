@@ -1,7 +1,6 @@
 ---
 template: song
 title: Leave Her Johnny
-version: 1
 tags:
   - Historical
 ---

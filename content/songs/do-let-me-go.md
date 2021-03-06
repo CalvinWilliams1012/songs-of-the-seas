@@ -1,7 +1,6 @@
 ---
 template: song
 title: Do Let Me Go
-version: 1
 youtube: " "
 tags:
   - Historical

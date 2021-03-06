@@ -1,7 +1,6 @@
 ---
 template: song
 title: Santy Anna
-version: 1
 tags:
   - Historical
 ---

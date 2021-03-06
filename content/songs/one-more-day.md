@@ -1,7 +1,6 @@
 ---
 template: song
 title: One More Day
-version: 1
 youtube: https://www.youtube.com/embed/hbjP4cffKZs
 tags:
   - Historical

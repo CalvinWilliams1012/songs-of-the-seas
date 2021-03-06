@@ -1,7 +1,6 @@
 ---
 template: song
 title: Good Morning Ladies All
-version: 1
 youtube: https://www.youtube.com/embed/pIKeHlbYVWw
 tags:
   - Historical

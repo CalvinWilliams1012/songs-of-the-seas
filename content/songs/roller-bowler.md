@@ -1,7 +1,6 @@
 ---
 template: song
 title: Roller, Bowler
-version: 1
 youtube: https://www.youtube.com/embed/fThhzc-vv5Q
 tags:
   - Historical

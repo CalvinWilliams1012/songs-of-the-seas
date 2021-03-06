@@ -1,7 +1,6 @@
 ---
 template: song
 title: Drunken Sailor
-version: 1
 tags:
   - Historical
 ---

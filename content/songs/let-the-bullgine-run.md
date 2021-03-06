@@ -1,7 +1,6 @@
 ---
 template: song
 title: Let The Bullgine Run
-version: 1
 youtube: " "
 tags:
   - Historical

@@ -1,7 +1,6 @@
 ---
 template: song
 title: Paddy Doyle
-version: 1
 youtube: https://www.youtube.com/embed/oJbB1NpqaYU
 tags:
   - Historical

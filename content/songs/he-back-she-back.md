@@ -1,7 +1,6 @@
 ---
 template: song
 title: He-Back She-Back
-version: 1
 tags:
   - Historical
   - Railroad

@@ -1,7 +1,6 @@
 ---
 template: song
 title: Huckleberry Hunting
-version: 1
 youtube: https://www.youtube.com/embed/cLgXqqUPuF0
 tags:
   - Historical

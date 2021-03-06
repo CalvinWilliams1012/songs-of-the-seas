@@ -1,7 +1,6 @@
 ---
 template: song
 title: Covid Shanty
-version: 1
 youtube: https://www.youtube.com/embed/avvUbypbBbw
 tags:
   - Parody

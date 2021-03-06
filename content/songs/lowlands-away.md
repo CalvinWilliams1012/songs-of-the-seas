@@ -1,7 +1,6 @@
 ---
 template: song
 title: Lowlands away
-version: 1
 youtube: https://www.youtube.com/embed/iddK6sub1YQ
 tags:
   - Historical

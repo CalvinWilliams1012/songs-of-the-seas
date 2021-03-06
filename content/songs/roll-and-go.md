@@ -1,7 +1,6 @@
 ---
 template: song
 title: Roll and Go
-version: 1
 tags:
   - Historical
 ---

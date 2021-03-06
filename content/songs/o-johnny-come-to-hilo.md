@@ -1,7 +1,6 @@
 ---
 template: song
 title: O Johnny Come To Hilo
-version: 1
 youtube: " "
 tags:
   - Historical

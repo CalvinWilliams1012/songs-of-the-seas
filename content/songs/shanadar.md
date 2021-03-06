@@ -1,7 +1,6 @@
 ---
 template: song
 title: Shanadar
-version: 1
 youtube: " "
 tags:
   - Historical

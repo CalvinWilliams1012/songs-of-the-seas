@@ -1,7 +1,6 @@
 ---
 template: song
 title: Poor Old Reuben Ranzo
-version: 1
 youtube: https://www.youtube.com/embed/xB0RhJaRnEk
 tags:
   - Historical

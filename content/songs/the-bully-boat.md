@@ -1,7 +1,6 @@
 ---
 template: song
 title: The Bully Boat
-version: 1
 youtube: " "
 tags:
   - Historical

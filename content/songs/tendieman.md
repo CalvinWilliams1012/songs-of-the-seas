@@ -1,7 +1,6 @@
 ---
 template: song
 title: Tendieman
-version: 1
 youtube: https://www.youtube.com/embed/7xTCPnyK4Fs
 tags:
   - Parody

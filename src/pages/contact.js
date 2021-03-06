@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import FullImageWithText from "../components/fullimagewithtext"
-import { navigate } from "gatsby"
+import { navigate, graphql } from "gatsby"
 
  function encode(data){
    return Object.keys(data).map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&')

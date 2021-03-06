@@ -33,7 +33,7 @@ collections:
     label: 'Song'
     folder: 'content/songs'
     create: true
-    slug: '{{slug}}-{{version}}'
+    slug: '{{slug}}'
     media_folder: ''
     public_folder: ''
     editor:
@@ -42,6 +42,5 @@ collections:
       - { label: 'Template', name: 'template', widget: 'string', default: 'song'}
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Version', name: 'version', widget: 'number', default: 1 }
       - { label: 'Youtube', name: 'youtube', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'list'}

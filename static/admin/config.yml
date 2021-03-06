@@ -42,5 +42,12 @@ collections:
       - { label: 'Template', name: 'template', widget: 'string', default: 'song'}
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: "Variants"
+      name: "Variants"
+      widget: "list"
+      summary: '{{fields.version}}'
+      fields:
+      - { label: 'Version', name: 'version', widget: 'number', default: 1 }
+      - { label: 'Lyrics', name: 'lyrics', widget: 'markdown' }
       - { label: 'Youtube', name: 'youtube', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'list'}

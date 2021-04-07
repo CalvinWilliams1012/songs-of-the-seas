@@ -33,20 +33,24 @@ class Header extends React.Component {
             >
               History
           </Link>
-
-          <Link
-              to="/songs"
-              className="header-button"
-            >
-              Songs
-          </Link>
           <Link
               to="/blog"
               className="header-button"
             >
               Blog
           </Link>
-
+          <Link
+              to="/about"
+              className="header-button"
+            >
+              About
+          </Link>
+          <Link
+              to="/contact"
+              className="header-button"
+            >
+              Contact
+          </Link>
         </div>
         <ModalMenu show={this.state.open} handleClose={this.close}>
          <Link
@@ -55,18 +59,23 @@ class Header extends React.Component {
             >
               History
           </Link>
-
-          <Link
-              to="/songs"
-              className="hamburger-header-button"
-            >
-              Songs
-          </Link>
           <Link
               to="/blog"
               className="hamburger-header-button"
             >
               Blog
+          </Link>
+          <Link
+              to="/about"
+              className="hamburger-header-button"
+            >
+              About
+          </Link>
+          <Link
+              to="/contact"
+              className="hamburger-header-button"
+            >
+              Contact
           </Link>
         </ModalMenu>
         <div onClick={() => this.open()} className="header-hamburger">

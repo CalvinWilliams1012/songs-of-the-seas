@@ -7,7 +7,7 @@ description: Community sea shanty!
 tags:
   - Creators
 ---
-The time is ticking, you have until Friday 12th Feb, 5pm GMT to submit you singing "[Wellerman](https://www.songsoftheseas.com/wellerman-1/)" to be included in The Longest John's upcoming mass choir community project.
+The time is ticking, you have until Friday 12th Feb, 5pm GMT to submit you singing "Wellerman" to be included in The Longest John's upcoming mass choir community project.
 
 You can find more details here: 
 

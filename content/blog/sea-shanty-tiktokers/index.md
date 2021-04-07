@@ -13,7 +13,7 @@ As you most likely already know, a recent trend on the social media app TikTok, 
 
 ## Nathan Evans
 
-Nathan Evans began uploading sea shanty TikTok's in December 2020 and is one of if.. if not the originator of the trend. His rendition of "[Wellerman](https://www.songsoftheseas.com/wellerman-1/)" as of January 2021 has racked up over 10 million views.
+Nathan Evans began uploading sea shanty TikTok's in December 2020 and is one of if.. if not the originator of the trend. His rendition of "Wellerman" as of January 2021 has racked up over 10 million views.
 
 Follow him here: [@nathanevanss](https://www.tiktok.com/@nathanevanss)
 

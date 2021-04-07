@@ -12,6 +12,9 @@ const SongTemplate = ({ data }) => {
 
   return (
     <Layout>
+      <div className="alert info">
+      <strong>Info!</strong> You seem to have navigated to a song, these are still accessible, but you shouldn't see any links on my site to here. I have depricated storing lyrics on this site, party due to zero click google searches increasing, and me providing little value with a large time investment required. You can find all kinds of lyrics in <Link to="/sea-shanty-books/">various sea shanty books.</Link>
+      </div>  
       <SEO title={frontmatter.title} />
       <h1 className="songLyrics" >{frontmatter.title}</h1>
       <div className="songLyrics" dangerouslySetInnerHTML={{__html: markdownRemark.html }}></div>

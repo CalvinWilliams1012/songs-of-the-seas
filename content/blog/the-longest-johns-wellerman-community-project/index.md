@@ -7,6 +7,8 @@ description: Community sea shanty!
 tags:
   - Creators
 ---
+Update: the time to submit your clip has ended, but the project is not yet available.
+
 The time is ticking, you have until Friday 12th Feb, 5pm GMT to submit you singing "Wellerman" to be included in The Longest John's upcoming mass choir community project.
 
 You can find more details here: 

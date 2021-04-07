@@ -7,7 +7,7 @@ const FullImageWithText = ({ imageInfo }) => {
   const { alt = '', childImageSharp, image ,text} = imageInfo
 
     return(
-        <div class="container">
+        <div className="container">
             {(Boolean(image) && Boolean(image.childImageSharp)) ? (      
                 <Img fluid={image.childImageSharp.fluid} alt={alt} />
             ) : null }

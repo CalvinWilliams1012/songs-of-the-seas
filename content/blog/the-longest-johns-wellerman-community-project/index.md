@@ -9,6 +9,10 @@ tags:
 ---
 Update: the time to submit your clip has ended, but the project is not yet available.
 
+Update 2: It is available!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RQ2HbYnlc3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 The time is ticking, you have until Friday 12th Feb, 5pm GMT to submit you singing "Wellerman" to be included in The Longest John's upcoming mass choir community project.
 
 You can find more details here: 
